@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -8,12 +8,31 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid">
           <Link to="/" className="navbar-brand text-white">
-            <h4>React Movie App</h4>
+            <h4>React Country Finder App</h4>
           </Link>
-          <div className="d-flex text-white align-items-center ">
+          <div className="d-flex  align-items-center ">
             <>
-              <button className="ms-2 btn btn-outline-light">Login</button>
-              <button className="ms-2 btn btn-outline-light">Register</button>
+              <button className="ms-2 " type="button">
+                <NavLink to="/about">About</NavLink>
+              </button>
+              <button className="ms-2" type="button">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/omer-yagci"
+                >
+                  Github
+                </a>
+              </button>
+              <button className="ms-2" type="button">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.linkedin.com/in/omer-kagan-yagci/"
+                >
+                  LinkedIn
+                </a>
+              </button>
             </>
           </div>
         </div>
