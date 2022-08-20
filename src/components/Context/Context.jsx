@@ -16,7 +16,6 @@ const Context = ({ children }) => {
   const getDataFromAPI = async () => {
     try {
       const { data } = await axios.get(URL);
-      console.log(data);
       setCountry(data);
     } catch (error) {
       console.log(error);
