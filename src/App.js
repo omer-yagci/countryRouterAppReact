@@ -6,9 +6,8 @@ import Homepage from "./pages/Homepage";
 import "./App.css";
 import NotFound from "./pages/NotFound";
 import Continents from "./pages/Continents";
-import Details from "./pages/Details";
+import { Details } from "./pages/Details";
 import Context from "./components/Context/Context";
-// import { PagesOutlet } from "./pages/PagesOutlet";
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
         <BrowserRouter>
           <Navbar />
           <Routes>
-            {/* <Route path="/" element={<PagesOutlet />} /> */}
             <Route path="/" element={<Homepage />} />
             <Route path="/:regionName" element={<Continents />} />
             <Route path="/:regionName/:countryName" element={<Details />} />
