@@ -8,6 +8,7 @@ const Homepage = () => {
         const { image, name } = continent;
         return (
           <Link
+            key={index}
             style={{ textDecoration: "none" }}
             to={`/${name.toLowerCase()}`}
           >
