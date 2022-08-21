@@ -4,7 +4,6 @@ import asia from "../assests/asia.png";
 import australia from "../assests/australia.png";
 import europe from "../assests/europe.png";
 import northAmerica from "../assests/northAmerica.png";
-import southAmerica from "../assests/southAmerica.png";
 
 export const continents = [
   {
@@ -12,7 +11,7 @@ export const continents = [
     image: <img src={afrika} alt="africa" />,
   },
   {
-    name: "Antartica",
+    name: "Antarctic",
     image: <img src={antartica} alt="antartica" />,
   },
   {
@@ -20,7 +19,7 @@ export const continents = [
     image: <img src={asia} alt="asia" />,
   },
   {
-    name: "Australia",
+    name: "Oceania",
     image: <img src={australia} alt="australia" />,
   },
   {
@@ -28,11 +27,7 @@ export const continents = [
     image: <img src={europe} alt="europe" />,
   },
   {
-    name: "NorthAmerica",
+    name: "Americas",
     image: <img src={northAmerica} alt="northAmerica" />,
-  },
-  {
-    name: "SouthAmerica",
-    image: <img src={southAmerica} alt="southAmerica" />,
   },
 ];

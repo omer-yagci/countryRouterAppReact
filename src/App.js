@@ -2,22 +2,22 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/nav/Navbar";
 import About from "./pages/About";
 import Homepage from "./pages/Homepage";
-// import { useCountryContext } from "./components/Context/Context";
 
 import "./App.css";
 import NotFound from "./pages/NotFound";
 import Continents from "./pages/Continents";
 import Details from "./pages/Details";
 import Context from "./components/Context/Context";
+// import { PagesOutlet } from "./pages/PagesOutlet";
 
 function App() {
-  // const { country } = useCountryContext();
   return (
-    <div>
+    <>
       <Context>
         <BrowserRouter>
           <Navbar />
           <Routes>
+            {/* <Route path="/" element={<PagesOutlet />} /> */}
             <Route path="/" element={<Homepage />} />
             <Route path="/:regionName" element={<Continents />} />
             <Route path="/:regionName/:countryName" element={<Details />} />
@@ -26,7 +26,7 @@ function App() {
           </Routes>
         </BrowserRouter>
       </Context>
-    </div>
+    </>
   );
 }
 

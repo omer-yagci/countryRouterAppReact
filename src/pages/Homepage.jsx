@@ -1,19 +1,21 @@
-import React from "react";
 import { continents } from "../util/data";
 import { Link } from "react-router-dom";
 
 const Homepage = () => {
   return (
     <div className="homePageContainer">
-      {continents?.map((item, index) => {
-        const { image, name } = item;
+      {continents?.map((continent, index) => {
+        const { image, name } = continent;
         return (
-          <div key={index} className="homePageContitentsCard">
-            <Link to={`${name}`}>
+          <Link
+            style={{ textDecoration: "none" }}
+            to={`/${name.toLowerCase()}`}
+          >
+            <div key={index} className="homePageContitentsCard">
               {image}
               <h5>{name}</h5>
-            </Link>
-          </div>
+            </div>
+          </Link>
         );
       })}
     </div>

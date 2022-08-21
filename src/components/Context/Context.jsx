@@ -11,12 +11,13 @@ export const useCountryContext = () => {
 
 const Context = ({ children }) => {
   const [country, setCountry] = useState([]);
-  const URL = `https://restcountries.com/v3.1/name/all`;
+  const URL = `https://restcountries.com/v3.1/all`;
 
   const getDataFromAPI = async () => {
     try {
       const { data } = await axios.get(URL);
       setCountry(data);
+      console.log(data);
     } catch (error) {
       console.log(error);
     }
