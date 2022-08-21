@@ -1,9 +1,9 @@
 import React from "react";
-
+import software from "../assests/software.jpg";
 const About = () => {
   return (
-    <section>
-      {/* <img src={coding} alt="coding" /> */}
+    <section className="aboutContainer">
+      <img className="aboutImage" src={software} alt="coding" />
 
       <h2>
         About Software Developer
@@ -12,7 +12,9 @@ const About = () => {
       <article>
         <h1>I'm Ömer</h1>
         <p>I'm currently learning Full-Stack Development Languages.</p>
-        <p>I've already known JS,ReactJS,HTML,Css,Sass,Booststrap5</p>
+        <p>
+          I've already known JS,ReactJS,HTML,Css,Sass,Booststrap5,Material UI
+        </p>
         <p>
           <span>Send email : </span>
           omeryagci3295@gmail.com

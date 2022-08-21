@@ -10,6 +10,7 @@
 /* Navbar Start */
 .navbar {
   background-color: black;
+  margin: 0 auto;
 }
 
 button {
@@ -39,6 +40,7 @@ button a:hover {
   gap: 1rem;
   margin-top: 1rem;
   min-height: 100vh;
+  text-align: center;
 
   /* Homepage End */
 }
@@ -64,8 +66,51 @@ button a:hover {
   color: #333;
 }
 .continentHeader {
-  /* background-color: red; */
   background-color: #f3f3f3;
 }
 
-/* Continents Pape End */
+/* Continents Page End */
+/* Details Page Start */
+.detailsContainer {
+  max-height: 100vh;
+  max-width: 350px;
+  background-color: lightblue;
+  border-radius: 10px;
+  padding: 7px;
+  margin: 10px auto;
+  text-align: center;
+  border: 2px solid grey;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+.country__name,
+.country__region,
+.country__row {
+  text-align: center;
+  font-size: 1.2rem;
+  color: black;
+  margin: 5px auto;
+  font-weight: bold;
+  background-color: #f3f3f3;
+  width: 80%;
+}
+.country__img {
+  width: 80%;
+  margin: 5px;
+  border-radius: 5px;
+  border: 3px solid black;
+}
+.goBackBtn {
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+/* Details Page End */
+/* About Page Start */
+
+.aboutContainer {
+  text-align: center;
+}
+.aboutImage {
+  max-width: 50%;
+}
+/* About Page End */
