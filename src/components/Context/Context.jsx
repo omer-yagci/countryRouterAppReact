@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import axios from "axios";
+import { getDataFromAPI } from "../../services/AxiosFunction";
 
 // ! Defining context
 export const CountryContext = createContext();
@@ -13,17 +13,8 @@ const Context = ({ children }) => {
   const [country, setCountry] = useState([]);
   const URL = `https://restcountries.com/v3.1/all`;
 
-  const getDataFromAPI = async () => {
-    try {
-      const { data } = await axios.get(URL);
-      setCountry(data);
-      console.log(data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
   useEffect(() => {
-    getDataFromAPI();
+    getDataFromAPI(setCountry, URL);
   }, []);
 
   const values = { country };
