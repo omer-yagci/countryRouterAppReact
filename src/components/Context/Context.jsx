@@ -14,7 +14,7 @@ const Context = ({ children }) => {
   const URL = `https://restcountries.com/v3.1/all`;
 
   useEffect(() => {
-    getDataFromAPI(setCountry, URL);
+    getDataFromAPI(URL, setCountry);
   }, []);
 
   const values = { country };

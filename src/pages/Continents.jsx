@@ -16,14 +16,13 @@ const Continents = () => {
           region,
         } = country;
         return region.toLowerCase() === regionName.toLowerCase() ? (
-          <div className="conteinetCard" key={index}>
+          <div key={index} className="conteinetCard">
             <Link
-              key={index}
               style={{ textDecoration: "none" }}
               to={`/${region.toLowerCase()}/${common.toLowerCase()}`}
             >
               <h3 className="continentHeader">{common}</h3>
-              <div key={index}>
+              <div>
                 <img src={flags.png} alt={official} />
               </div>
             </Link>

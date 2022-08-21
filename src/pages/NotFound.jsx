@@ -8,7 +8,7 @@ const NotFound = () => {
     <h1>Something went Wrong!</h1>
     <img src={notFoundImage} alt="notFoundImage" />
     <div>
-      <button onClick={() => navigate("/")}>Login</button>
+      <button onClick={() => navigate("/")}>Home</button>
       <button onClick={() => navigate(-1)}>Go Back</button>
     </div>
   </div>;
