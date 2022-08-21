@@ -7,6 +7,7 @@
   font-family: "Nanum Myeongjo", serif;
 }
 
+/* Navbar Start */
 .navbar {
   background-color: black;
 }
@@ -26,6 +27,10 @@ button a:hover {
   outline: none;
   color: white;
 }
+/* Navbar End */
+
+/* Homepage Start */
+
 .homePageContainer {
   /* background-color: red; */
   display: flex;
@@ -33,4 +38,34 @@ button a:hover {
   justify-content: space-evenly;
   gap: 1rem;
   margin-top: 1rem;
+  min-height: 100vh;
+
+  /* Homepage End */
 }
+
+/* Continents Pages Start */
+.continentsPageContainer {
+  background-color: snow;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  /* margin: 1rem; */
+}
+
+.conteinetCard {
+  text-align: center;
+  margin: 1rem;
+}
+.conteinetCard a {
+  color: black;
+}
+.conteinetCard a:hover {
+  color: #333;
+}
+.continentHeader {
+  /* background-color: red; */
+  background-color: #f3f3f3;
+}
+
+/* Continents Pape End */
