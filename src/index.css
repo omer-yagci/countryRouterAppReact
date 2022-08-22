@@ -114,3 +114,10 @@ button a:hover {
   max-width: 50%;
 }
 /* About Page End */
+
+.errorPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
