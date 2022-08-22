@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import { getDataFromAPI } from "../../services/AxiosFunction";
+import { getDataFromAPI } from "../services/AxiosFunction";
 
 // ! Defining context
 export const CountryContext = createContext();

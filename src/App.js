@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Nav/Navbar";
+import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import Homepage from "./pages/Homepage";
 
 import ErrorPage from "./pages/ErrorPage";
 import Continents from "./pages/Continents";
 import { Details } from "./pages/Details";
-import Context from "./components/Context/Context";
+import Context from "./components/Context";
 import "./App.css";
 
 function App() {

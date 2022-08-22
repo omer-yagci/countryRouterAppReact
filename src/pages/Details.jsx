@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { useCountryContext } from "../components/Context/Context";
+import { useCountryContext } from "../components/Context";
 import ErrorPage from "./ErrorPage";
 export const Details = () => {
   const { country } = useCountryContext();
