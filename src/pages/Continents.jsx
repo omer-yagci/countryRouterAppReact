@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { useCountryContext } from "../components/Context/Context";
-// import NotFound from "./NotFound";
 
 const Continents = () => {
   const { regionName } = useParams();

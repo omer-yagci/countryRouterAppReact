@@ -44,7 +44,7 @@ export const Details = () => {
         {population ? +(population / 1000000).toFixed(1) : ""}million
       </p>
       <button className="goBackBtn" onClick={() => navigate(-1)}>
-        Go Back
+        To previous page
       </button>
     </section>
   );
