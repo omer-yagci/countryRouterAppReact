@@ -3,11 +3,11 @@ import Navbar from "./components/nav/Navbar";
 import About from "./pages/About";
 import Homepage from "./pages/Homepage";
 
-import "./App.css";
-import NotFound from "./pages/NotFound";
+import ErrorPage from "./pages/ErrorPage";
 import Continents from "./pages/Continents";
 import { Details } from "./pages/Details";
 import Context from "./components/Context/Context";
+import "./App.css";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
             <Route path="/:regionName" element={<Continents />} />
             <Route path="/:regionName/:countryName" element={<Details />} />
             <Route path="/about" element={<About />} />
-            <Route path="*" element={<NotFound />} />
+            <Route path="*" element={<ErrorPage />} />
           </Routes>
         </BrowserRouter>
       </Context>

@@ -1,14 +1,18 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useCountryContext } from "../components/Context/Context";
-import NotFound from "./NotFound";
+import ErrorPage from "./ErrorPage";
 export const Details = () => {
   const { country } = useCountryContext();
 
   const { countryName } = useParams();
+  const navigate = useNavigate();
 
   const countryData = country.find(
     (country) => country.name.common.toLowerCase() === countryName
   );
+  if (!countryData) {
+    return <ErrorPage />;
+  }
   const {
     capital,
     flags,
@@ -19,15 +23,14 @@ export const Details = () => {
     name: { common },
   } = countryData;
 
-  const navigate = useNavigate();
-  return countryData ? (
+  return (
     <section className="detailsContainer">
       <div>
         <img className="country__img" src={flags.png} alt={common} />
       </div>
 
-      <h3 className="country__name">{capital}</h3>
-      <h4 className="country__region">Region:{region}</h4>
+      <h3 className="country__name">{capital ? capital : ""}</h3>
+      <h4 className="country__region">Region:{region ? region : ""}</h4>
       <p className="country__row">
         Language:
         {languages ? Object.values(languages)[0] : ""}
@@ -44,7 +47,5 @@ export const Details = () => {
         Go Back
       </button>
     </section>
-  ) : (
-    <NotFound />
   );
 };
