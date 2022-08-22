@@ -6,7 +6,7 @@
 Project aims to create a CountryApp with React-Router.
 
 ## Project
-https://country-router-app-react-omer-yagci.vercel.app/antarctic
+https://country-router-app-react-omer-yagci.vercel.app
 
 ![Form](router-app.gif)
 
